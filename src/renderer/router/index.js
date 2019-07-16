@@ -74,12 +74,20 @@ export const constantRouterMap = [
   {
     path: '/mongo',
     component: Layout,
+    name: '数据抓取',
+    meta: { title: '数据抓取', icon: 'example' },
     children: [
       {
-        path: 'mongo',
-        name: 'Form',
+        path: 'jobList',
+        name: 'jobList',
         component: () => import('@/views/mongoTest/index'),
-        meta: { title: 'mongo', icon: 'form' }
+        meta: { title: '任务中心', icon: 'form' }
+      },
+      {
+        path: 'uploadLog',
+        name: 'uploadLog',
+        component: () => import('@/views/mongoTest/index'),
+        meta: { title: '上传日志', icon: 'form' }
       }
     ]
   },

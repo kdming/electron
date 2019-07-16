@@ -30,6 +30,7 @@ module.exports = {
       'before': true,
       'after': true
     }],
+    "vue/no-use-v-if-with-v-for": "off",
     'block-spacing': [2, 'always'],
     'brace-style': [2, '1tbs', {
       'allowSingleLine': true
@@ -142,7 +143,7 @@ module.exports = {
     }],
     'no-unreachable': 2,
     'no-unsafe-finally': 2,
-    'no-unused-vars': [2, {
+    'no-unused-vars': [1, {
       'vars': 'all',
       'args': 'none'
     }],
